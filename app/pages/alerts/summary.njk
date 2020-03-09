@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% block title -%}
+  Disruption Alerts
+{%- endblock %}
+{% block content %}
+<main class="wmnds-container wmnds-container--main">
+<h1>Sign up to email alerts about disruptions</h1>
+<ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-success" href="/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Personal details</span>
+    </div>
+  </li>
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-success" href="/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Services</span>
+    </div>
+  </li>
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Summary</span>
+    </div>
+  </li>
+</ul>
+<h2>Add a bus route</h2>
+<div class="wmnds-autocomplete wmnds-grid">
+  <!-- Search icon -->
+  <svg class="wmnds-autocomplete__icon">
+    <use xlink:href="https://wmnetwork.netlify.com/img/wmnds-sprite.min.svg#wmnds-general-search" href="https://wmnetwork.netlify.com/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
+  </svg>
+  <!-- normal sized loader -->
+  <div class="wmnds-loader" role="alert" aria-live="assertive">
+    <p class="wmnds-loader__content">Content is loading...</p>
+  </div>
+  <!-- Autocomplete input box -->
+  <input type="text" name="busSearch" aria-label="Search for a bus route" class="wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus route"/>
+</div>
+</main>
+{% endblock %}

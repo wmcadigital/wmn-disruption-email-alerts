@@ -1,0 +1,49 @@
+{% extends "layout.njk" %}
+
+{% block title -%}
+  Disruption Alerts
+{%- endblock %}
+{% block content %}
+<main class="wmnds-container wmnds-container--main">
+<h1>Sign up to email alerts about disruptions</h1>
+<ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-success" href="/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Personal details</span>
+    </div>
+  </li>
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Services</span>
+    </div>
+  </li>
+  <li class="wmnds-col-1 wmnds-col-md-1-5">
+    <div class="wmnds-progress-indicator__item">
+      <svg class="wmnds-progress-indicator__icon">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
+    </svg>
+      <span class="wmnds-progress-indicator__title">Summary</span>
+    </div>
+  </li>
+</ul>
+<div class="wmnds-fe-input">
+  <label for="input" class="fe-title">Full Name</label>
+  <input type="text" name="input" id="input" class="wmnds-col-1"/>
+</div>
+<div class="wmnds-fe-input">
+  <label for="input" class="fe-title">Email Address</label>
+  <input type="text" name="input" id="input" class="wmnds-col-1"/>
+</div>
+<div class="wmnds-website-mar"></div>
+<a href="/alerts/services.html"><button class="wmnds-btn wmnds-btn--cta" >
+    Continue
+</button></a>
+<div class="wmnds-website-mar"></div>
+</main>
+{% endblock %}

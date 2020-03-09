@@ -1,0 +1,20 @@
+{% extends "layout.njk" %}
+
+{% block title -%}
+  Disruption Alerts
+{%- endblock %}
+{% block content %}
+<main class="wmnds-container wmnds-container--main">
+  <h1>Sign up to email alerts about disruptions</h1>
+  <p>This is an automatic service which will email you every time there is a disruption to your bus route or tram service.</p>
+  <p>We need to take a few details, such as your name, email address and what you want to receive alerts about.</p>
+  <div class="wmnds-website-mar"></div>
+  <a href="/alerts/personal-details.html"><button class="wmnds-btn wmnds-btn--start" >
+    Start
+    <svg class="wmnds-btn__icon wmnds-btn__icon--right">
+      <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-chevron-right" href="/img/wmnds-sprite.min.svg#wmnds-general-chevron-right"></use>
+    </svg>
+</button></a>
+<div class="wmnds-website-mar"></div>
+</main>
+{% endblock %}
