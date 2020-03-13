@@ -1,0 +1,41 @@
+.wmnds-container-alerts-management {
+  background-color: #f3f2f1;
+
+  .wmnds-content-tile {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    &__list {
+      &--li {
+        display: flex;
+      }
+
+      .wmnds-disruption-indicator-large__text {
+        width: auto;
+      }
+
+      .wmnds-btn--destructive {
+        float: right;
+      }
+    }
+
+    .wmnds-btn--destructive {
+      margin-top: 10px;
+      display: flex;
+      height: 50px;
+    }
+
+    &__images {
+      width: 22px;
+      height: 60px;
+      margin-left: 5px;
+      margin-top: -20px;
+      fill: white;
+    }
+    .wmnds-content-tile__list-content {
+      display: flex;
+    }
+  }
+  .wmnds-banner-container {
+    border: 0;
+  }
+}
