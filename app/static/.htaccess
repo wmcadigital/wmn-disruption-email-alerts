@@ -584,7 +584,7 @@ AddDefaultCharset utf-8
 # project (e.g.: project dependencies), build scripts, etc..
 
 <IfModule mod_authz_core.c>
-    <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
+    <FilesMatch "(^#.*#|\.(bak|conf|dist|docs|fla|in[ci]|log|orig|psd|sh|sql|sw[op])|~)$">
         Require all denied
     </FilesMatch>
 </IfModule>
