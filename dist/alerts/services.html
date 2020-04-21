@@ -108,6 +108,7 @@
   </li>
 </ul>
 <h2>Add a bus route</h2>
+<label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
 <div class="wmnds-autocomplete wmnds-grid">
   <!-- Search icon -->
   <svg class="wmnds-autocomplete__icon">
@@ -118,8 +119,13 @@
     <p class="wmnds-loader__content">Content is loading...</p>
   </div>
   <!-- Autocomplete input box -->
-  <input type="text" name="busSearch" aria-label="Search for a bus route" class="wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus route"/>
+  <input class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Tap to search" id="serviceSearch" name="serviceSearch" aria-label="Tap to search"  type="text" >
 </div>
+<div class="wmnds-website-mar"></div>
+<a class="wmnds-btn wmnds-btn--destructive" href="../index.html">
+    Cancel
+</a>
+<div class="wmnds-website-mar"></div>
 </main>
 
 
