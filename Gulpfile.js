@@ -19,16 +19,16 @@ sass.compiler = require('node-sass');
 
 const path = {
   input: 'app/',
-  output: 'dist/',
+  output: 'docs/',
   scripts: {
     input: 'app/scripts/*.js',
-    output: 'dist/js'
+    output: 'docs/js'
   },
   styles: {
     main: 'app/scss/main.scss',
     input: 'app/scss/*.scss',
-    output: 'dist/css',
-    docs: 'dist/sassdoc'
+    output: 'docs/css',
+    docs: 'docs/sassdoc'
   },
   nunjucks: {
     pages: 'app/pages/**/*.+(html|njk|nunjucks)',
@@ -37,7 +37,7 @@ const path = {
   },
   images: {
     input: 'app/images/**/*',
-    output: 'dist/img'
+    output: 'docs/img'
   },
   static: {
     css: 'app/css/*.css',
