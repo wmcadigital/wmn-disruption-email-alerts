@@ -5,46 +5,127 @@
 {%- endblock %}
 {% block content %}
 <div class="wmnds-container-alerts-management">
-    <h1>Sign up to email alerts about disruptions</h1>
-    <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
+  <h1>Sign up to email alerts about disruptions</h1>
+    <div class="wmnds-grid">
+      <div class="wmnds-col-1 wmnds-col-sm-3-4">
+        <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
             <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
                 <svg class="wmnds-progress-indicator__icon">
                     <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
                 </svg>
                 <span class="wmnds-progress-indicator__title">Personal details</span>
             </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
+          </li>
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
             <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
                 <svg class="wmnds-progress-indicator__icon">
                     <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
                 </svg>
                 <span class="wmnds-progress-indicator__title">Services</span>
             </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
+          </li>
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
             <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
                 <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
                 </svg>
                 <span class="wmnds-progress-indicator__title">Summary</span>
             </div>
-        </li>
-    </ul>
-    <h2>Add a bus route</h2>
-    <div
-        class="wmnds-autocomplete wmnds-grid">
-        <!-- Search icon -->
-        <svg class="wmnds-autocomplete__icon">
-            <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
-        </svg>
-        <!-- normal sized loader -->
-        <div class="wmnds-loader" role="alert" aria-live="assertive">
-            <p class="wmnds-loader__content">Content is loading...</p>
-        </div>
-        <!-- Autocomplete input box -->
-        <input type="text" name="busSearch" aria-label="Search for a bus route" class="wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus route"/>
+          </li>
+        </ul>
+        <div class="wmnds-content-tile">
+          <div class="wmnds-content-tile__copy">
+            <div class="wmnds-website-mar"></div>
+            <p>You can sign up to as many bus services as you would like.
+            You will receive an automatic email update for each disruption.</p>
+            <div class="wmnds-grid">
+              <div class="wmnds-col-3-4">
+                <h2>Personal details</h2>
+              </div>
+              <div class="wmnds-col-1-4">
+                <a class="wmnds-float-right" href="$*cdn/alerts/personal-details.html">Edit</a>
+              </div>
+            </div>
+            <p>Full name<br>
+            <strong>Nathan Rogan</strong></p>
+            <p>Email address<br>
+            <strong>nathan@test.com</strong></p>
+            <hr>
+            <div class="wmnds-grid">
+              <div class="wmnds-col-3-4">
+                <h2>Services added</h2>
+              </div>
+              <div class="wmnds-col-1-4">
+                <a class="wmnds-float-right" href="$*cdn/alerts/services.html">Edit</a>
+              </div>
+            </div>
+              <div class="wmnds-grid">
+                <div class="wmnds-col-22-24 wmnds-col-sm-3-4">
+                  <ul class="wmnds-content-tile__list">
+                    <li class="wmnds-content-tile__list--li">
+                      <div class="wmnds-col-auto">
+                          <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">47</div>
+                      </div>
+                      <p class="wmnds-disruption-indicator-large__text">
+                          <strong>Longbridge - Birmingham</strong>
+                          <br>including return journey</p>
+                    </li>
+                    <hr>
+                    <li class="wmnds-content-tile__list--li">
+                      <div class="wmnds-col-auto">
+                        <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">40</div>
+                      </div>
+                        <p class="wmnds-disruption-indicator-large__text">
+                      <strong>West Bromwich - Wednesbury</strong>
+                      <br>including return journey</p>
+                    </li>
+                    <hr>
+                    <li class="wmnds-content-tile__list--li">
+                      <div class="wmnds-col-auto">
+                        <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">x11</div>
+                      </div>
+                      <p class="wmnds-disruption-indicator-large__text">
+                      <strong>Burton on Trent - Perry Barr</strong>
+                      <br>including return journey</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <hr>
+              <h2>Consent</h2>
+                <div class="wmnds-fe-group">
+                  <fieldset class="wmnds-fe-fieldset">
+                    <div class="wmnds-fe-checkboxes">
+                      <label class="wmnds-fe-checkboxes__container">
+                        I have read the <a href="#" target="_blank" title="Read our Privacy Policy">Privacy Policy</a> and agree to be emailed about disruptions.
+                        <input class="wmnds-fe-checkboxes__input" value="Option 1" type="checkbox"/>
+                        <span class="wmnds-fe-checkboxes__checkmark">
+                          <svg class="wmnds-fe-checkboxes__icon">
+                          <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-checkmark" href="/img/wmnds-sprite.min.svg#wmnds-general-checkmark"></use>
+                        </svg>
+                        </span>
+                      </label>
+                      <label class="wmnds-fe-checkboxes__container">
+                        I agree to be emailed by West Midlands Combined Authority about any research opportunities.
+                        <input class="wmnds-fe-checkboxes__input" value="Option 2" type="checkbox"/>
+                        <span class="wmnds-fe-checkboxes__checkmark">
+                          <svg class="wmnds-fe-checkboxes__icon">
+                          <use xlink:href="/img/wmnds-sprite.min.svg#wmnds-general-checkmark" href="/img/wmnds-sprite.min.svg#wmnds-general-checkmark"></use>
+                        </svg>
+                        </span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="wmnds-website-mar"></div>
+                  <a class="wmnds-btn wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/alerts/successful.html">
+                    Complete sign up
+                  </a>
+                <div class="wmnds-website-mar"></div>
+              </div>
+            </div>
+          </div>
     </div>
 </div>
 {% endblock %}
