@@ -1,0 +1,58 @@
+{% extends "layout.njk" %}
+
+{% block title -%}
+  Disruption Alerts
+{%- endblock %}
+{% block content %}
+<div class="wmnds-container-alerts-management">
+  <h1>Sign up to email alerts about disruptions</h1>
+    <div class="wmnds-grid">
+      <div class="wmnds-col-1 wmnds-col-sm-3-4">
+        <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Personal details</span>
+            </div>
+          </li>
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Services</span>
+            </div>
+          </li>
+          <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Summary</span>
+            </div>
+          </li>
+        </ul>
+        <div class="wmnds-content-tile">
+          <div class="wmnds-content-tile__copy">
+            <div class="wmnds-msg-summary wmnds-msg-summary--success">
+              <div class="wmnds-msg-summary__header">
+                <svg class="wmnds-msg-summary__icon">
+                  <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <h3 class="wmnds-msg-summary__title">Sign up successful</h3>
+              </div>
+              <div class="wmnds-msg-summary__info">
+                You will receive an email asking you to confirm your subscription.
+                Once you have confirmed, you will start to receive automatic disruption alerts.
+                Unsubscribe at any time using the links in the footer of the email.
+                Add more bus and tram services by starting this process again.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
