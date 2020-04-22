@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+      Disruption Alerts
+    </title>
+    <meta name="description" content="A Nunjucks and Gulp static site boilerplate.">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3c1053">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#3c1053">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#3c1053">
+
+    <link type="text/plain" rel="author" href="humans.txt"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../../css/main.css">
+    <!--<link rel="stylesheet" href="css/main.css">-->
+
+    <!-- CSS for WMN Design System -->
+    <link href="//wmnetwork.netlify.com/css/wmnds-components.min.css" rel="stylesheet" type="text/css">
+    <link href="//wmnetwork.netlify.com/css/wmnds-website.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
+
+  </head>
+
+  <body>
+    <!--[if IE]> <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p> <![endif]-->
+
+    <!-- Skip to content link -->
+<a href="#wmnds-main-content" title="Skip to main content" target="_self" class="wmnds-link wmnds-header__skip-link">Skip to main content</a>
+<!-- Main header section -->
+<header class="wmnds-header">
+  <div class="wmnds-container wmnds-grid wmnds-grid--align-center wmnds-grid--justify-between">
+    <div class="wmnds-header__vertical-align wmnds-col-auto">
+      <!-- Logo -->
+      <a class="wmnds-header__logo-link" href="/" title="West Midlands Network Design System">
+        <img class="wmnds-header__logo" alt="West Midlands Network logo" src="https://wmnetwork.netlify.com/img/logo.svg" />
+      </a>
+      <!-- Phase indicator -->
+      <a href="/" target="_self" class="wmnds-phase-indicator" title="Beta homepage of West Midlands Network Design System">
+        Beta
+      </a>
+    </div>
+    <!-- Nav items -->
+    <!-- Nav items -->
+<nav class="wmnds-header__vertical-align wmnds-col-auto">
+  <ul class="wmnds-header__links wmnds-header__main-links">
+    <li class="wmnds-header__link">
+      <a href="#" title="Plan a journey" target="_self" class="wmnds-link" >
+        Plan a journey
+      </a>
+    </li>
+    <li class="wmnds-header__link">
+      <a href="#" title="Tickets Search" target="_self" class="wmnds-link" >
+        Tickets
+      </a>
+    </li>
+    <li class="wmnds-header__link">
+      <a href="#" title="Contact Us" target="_self" class="wmnds-link" >
+        Help
+      </a>
+    </li>
+  </ul>
+</nav>
+  </div>
+</header>
+
+    <div class="wmnds-container">
+    <div class="wmnds-grid wmnds-banner-container">
+        <div class="wmnds-col-auto wmnds-float-left wmnds-m-r-xsm">
+            <a href="/" target="_self" class="wmnds-phase-indicator" title="Beta homepage of West Midlands Network Design System">
+                Beta
+            </a>
+        </div>
+        <div class="wmnds-col-auto">
+            <p class="wmnds-banner-container__text">
+                This is a new service - your
+                <a href="#" title="link title" target="_self" class="wmnds-link">feedback</a>
+                will help us to improve it.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+    <main id="wmnds-main-content" class="wmnds-container wmnds-container--main">
+
+      
+<div class="wmnds-container-alerts-management">
+    <div class="wmnds-grid">
+        <div class="wmnds-col-1">
+            <div class="wmnds-grid">
+                <div class="wmnds-col-1 wmnds-col-xl-3-4">
+                    <div class="wmnds-col-md-3-4">
+                        <div class="wmnds-content-tile">
+                            <p>Hi customer_name</p>
+                            <p>Welcome to your preference centre. Here you can add and remove routes that you no longer wish to receive disruption alerts about. Also confirm routes that you have subscribed, this is to ensure your security online.</p>
+                        </div>
+                        <div class="wmnds-content-tile">
+                            <a id="confirm"></a>
+                            <h2>Confirm your routes</h2>
+                            <div class="wmnds-msg-help">
+                                Confirm services that you signed up for. If you do not confirm, services will expire by midnight.
+                            </div>
+                            <hr>
+                                <h3>Bus routed added</h3>
+                                <ul class="wmnds-content-tile__list">
+                                    <li class="wmnds-content-tile__list--li">
+                                        <div class="wmnds-col-auto">
+                                            <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">47</div>
+                                        </div>
+                                        <p class="wmnds-disruption-indicator-large__text">
+                                            <strong>Longbridge - Birmingham</strong>
+                                            <br>including return journey</p>
+                                        </li>
+                                        <hr>
+                                            <li class="wmnds-content-tile__list--li">
+                                                <div class="wmnds-col-auto">
+                                                    <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">40</div>
+                                                </div>
+                                                <p class="wmnds-disruption-indicator-large__text">
+                                                    <strong>West Bromwich - Wednesbury</strong>
+                                                    <br>including return journey</p>
+                                                </li>
+                                                <hr>
+
+                                                    <li class="wmnds-content-tile__list--li">
+                                                        <div class="wmnds-col-auto">
+                                                            <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">x11</div>
+                                                        </div>
+                                                        <p class="wmnds-disruption-indicator-large__text">
+                                                            <strong>Burton on Trent - Perry Barr</strong>
+                                                            <br>including return journey</p>
+                                                        </li>
+                                                    </ul>
+                                                    <hr>
+                                                        <a href="#" title="This is a confirm routes link" target="_self" class="wmnds-btn wmnds-btn--start wmnds-col-1 wmnds-col-sm-auto">Confirm your routes</a>
+                                                    </div>
+
+                                                    <div class="wmnds-content-tile">
+                                                        <a id="add"></a>
+                                                        <h2>Add more routes</h2>
+                                                        <p>Subscribe to more service alerts. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                        <a href="#" title="This is a call to add more routes link" target="_self" class="wmnds-btn wmnds-col-1 wmnds-col-sm-auto">Add more routes</a>
+                                                    </div>
+
+                                                    <div class="wmnds-content-tile">
+                                                        <a id="remove"></a>
+                                                        <h2>Remove your routes</h2>
+                                                        <div class="wmnds-msg-help">
+                                                            Select services you want to remove from your email alerts list.
+                                                        </div>
+                                                        <hr>
+                                                            <h3>Bus routed added</h3>
+                                                            <ul class="wmnds-content-tile__list">
+                                                                <li class="wmnds-content-tile__list--li">
+                                                                    <div class="wmnds-grid wmnds-grid--justify-center">
+                                                                        <div class="wmnds-content-tile__list-content wmnds-col-1 wmnds-col-sm-1-2">
+                                                                            <div class="wmnds-col-auto">
+                                                                                <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">47</div>
+                                                                            </div>
+                                                                            <p class="wmnds-disruption-indicator-large__text">
+                                                                                <strong>Longbridge - Birmingham</strong>
+                                                                                <br>including return journey</p>
+                                                                            </div>
+                                                                            <div class="wmnds-col-auto wmnds-col-1 wmnds-col-sm-1-2">
+                                                                                <button class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto">Remove Route
+                                                                                    <svg class="wmnds-btn__icon wmnds-btn__icon--right">
+                                                                                        <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash"></use>
+                                                                                    </svg>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <hr>
+                                                                        <li class="wmnds-content-tile__list--li">
+                                                                            <div class="wmnds-grid">
+                                                                                <div class="wmnds-content-tile__list-content wmnds-col-1 wmnds-col-sm-1-2">
+                                                                                    <div class="wmnds-col-auto">
+                                                                                        <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">40</div>
+                                                                                    </div>
+                                                                                    <p class="wmnds-disruption-indicator-large__text">
+                                                                                        <strong>West Bromwich - Wednesbury</strong>
+                                                                                        <br>including return journey</p>
+                                                                                    </div>
+
+                                                                                    <div class="wmnds-col-auto wmnds-col-1 wmnds-col-sm-1-2">
+                                                                                        <button class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto">Remove Route
+                                                                                            <svg class="wmnds-btn__icon wmnds-btn__icon--right">
+                                                                                                <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash"></use>
+                                                                                            </svg>
+                                                                                        </button>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </li>
+                                                                            <hr>
+
+                                                                                <li class="wmnds-content-tile__list--li">
+                                                                                    <div class="wmnds-grid">
+                                                                                        <div class="wmnds-content-tile__list-content wmnds-col-1 wmnds-col-sm-1-2">
+                                                                                            <div class="wmnds-col-auto">
+                                                                                                <div class="wmnds-disruption-indicator-medium wmnds-disruption-indicator-medium">x11</div>
+                                                                                            </div>
+                                                                                            <p class="wmnds-disruption-indicator-large__text">
+                                                                                                <strong>Burton on Trent - Perry Barr via Erdington</strong>
+                                                                                                <br>including return journey</p>
+                                                                                            </div>
+                                                                                            <div class="wmnds-col-auto wmnds-col-1 wmnds-col-sm-1-2">
+                                                                                                <button class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto">Remove Route
+                                                                                                    <svg class="wmnds-btn__icon wmnds-btn__icon--right">
+                                                                                                        <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash"></use>
+                                                                                                    </svg>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+
+                                                                            <div class="wmnds-content-tile">
+                                                                                <h2>Delete your account</h2>
+                                                                                <p>Copy to explain how to remove your information. Once deleted, data is gone. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                                                                <button class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto">Delete account
+                                                                                    <svg class="wmnds-btn__icon wmnds-btn__icon--right">
+                                                                                        <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-trash"></use>
+                                                                                    </svg>
+                                                                                </button>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wmnds-col-1 wmnds-col-xl-1-4">
+                                                                        <div class="wmnds-content-tile wmnds-content-tile--nav">
+                                                                            <h3>Manage your email alerts</h3>
+                                                                            <span class="wmnds-content-tile__legend">
+                                                                                Overview
+                                                                            </span>
+                                                                            <ul class="wmnds-content-tile__list">
+                                                                                <li class="wmnds-content-tile__list-item">
+                                                                                    <a href="#confirm" title="link title" target="_self" class="wmnds-link">Confirm your routes</a>
+                                                                                </li>
+                                                                                <li class="wmnds-content-tile__list-item">
+                                                                                    <a href="#add" title="link title" target="_self" class="wmnds-link">Add more routes</a>
+                                                                                </li>
+                                                                                <li class="wmnds-content-tile__list-item">
+                                                                                    <a href="#remove" title="link title" target="_self" class="wmnds-link">Remove your routes</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+    
+
+    </main>
+
+    <footer class="wmnds-footer">
+  <div class="wmnds-container wmnds-grid">
+    <div class="wmnds-col-1 wmnds-col-md-1-2">
+      Copyright West Midlands Network &copy; 2020
+    </div>
+    <div class="wmnds-col-1 wmnds-col-md-1-2">
+
+    </div>
+  </div>
+</footer>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga
+          .q
+          .push(arguments)
+      };
+      ga.q = [];
+      ga.l = + new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto');
+      ga('set', 'transport', 'beacon');
+      ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async="async"></script>
+    <script src="//cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/js/autoComplete.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+  </body>
+
+</html>
