@@ -4,52 +4,62 @@
   Disruption Alerts
 {%- endblock %}
 {% block content %}
-<main id="wmnds-main-content" class="wmnds-container wmnds-container--main">
-<h1>Sign up to email alerts about disruptions</h1>
-<ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
-  <li class="wmnds-col-1 wmnds-col-md-1-5">
-    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
-      <svg class="wmnds-progress-indicator__icon">
-      <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
-    </svg>
-      <span class="wmnds-progress-indicator__title">Personal details</span>
-    </div>
-  </li>
-  <li class="wmnds-col-1 wmnds-col-md-1-5">
-    <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
-      <svg class="wmnds-progress-indicator__icon">
-      <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
-    </svg>
-      <span class="wmnds-progress-indicator__title">Services</span>
-    </div>
-  </li>
-  <li class="wmnds-col-1 wmnds-col-md-1-5">
-    <div class="wmnds-progress-indicator__item">
-      <svg class="wmnds-progress-indicator__icon">
-      <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
-    </svg>
-      <span class="wmnds-progress-indicator__title">Summary</span>
-    </div>
-  </li>
-</ul>
-<h2>Add a bus route</h2>
-<label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
-<div class="wmnds-autocomplete wmnds-grid">
-  <!-- Search icon -->
-  <svg class="wmnds-autocomplete__icon">
-    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
-  </svg>
-  <!-- normal sized loader -->
-  <div class="wmnds-loader" role="alert" aria-live="assertive">
-    <p class="wmnds-loader__content">Content is loading...</p>
+<div class="wmnds-container-alerts-sign-up">
+    <h1>Sign up to email alerts about disruptions</h1>
+    <div class="wmnds-grid">
+    <div class="wmnds-col-1 wmnds-col-sm-3-4">
+    <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
+        <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Personal details</span>
+            </div>
+        </li>
+        <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--current">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Services</span>
+            </div>
+        </li>
+        <li class="wmnds-col-1 wmnds-col-md-1-5">
+            <div class="wmnds-progress-indicator__item">
+                <svg class="wmnds-progress-indicator__icon">
+                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
+                </svg>
+                <span class="wmnds-progress-indicator__title">Summary</span>
+            </div>
+        </li>
+    </ul>
+    <div class="wmnds-content-tile">
+    <h2>Add a bus route</h2>
+    <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
+    <div
+        class="wmnds-autocomplete wmnds-grid">
+        <!-- Search icon -->
+        <svg class="wmnds-autocomplete__icon">
+            <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
+        </svg>
+        <!-- normal sized loader -->
+        <div class="wmnds-loader" role="alert" aria-live="assertive">
+            <p class="wmnds-loader__content">Content is loading...</p>
+        </div>
+        <!-- Autocomplete input box -->
+        <input class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Tap to search" id="serviceSearch" name="serviceSearch" aria-label="Tap to search" type="text"></div>
+        <div class="wmnds-website-mar"></div>
+        <a class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/index.html">
+            Cancel
+        </a>
+        <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/alerts/summary.html">
+            Continue
+        </a>
+  <div class="wmnds-website-mar"></div>
   </div>
-  <!-- Autocomplete input box -->
-  <input class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Tap to search" id="serviceSearch" name="serviceSearch" aria-label="Tap to search"  type="text" >
+  </div>
+  </div>
 </div>
-<div class="wmnds-website-mar"></div>
-<a class="wmnds-btn wmnds-btn--destructive" href="$*cdn/index.html">
-    Cancel
-</a>
-<div class="wmnds-website-mar"></div>
-</main>
+
 {% endblock %}

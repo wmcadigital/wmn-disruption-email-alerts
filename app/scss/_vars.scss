@@ -1,0 +1,16 @@
+// Breakpoints
+$breakpoint-xs: 0; // Extra small screen / phone
+$breakpoint-sm: 568px; // Small screen / phone
+$breakpoint-md: 768px; // Medium screen / tablet
+$breakpoint-lg: 1024px; // Large screen / desktop
+$breakpoint-xl: 1280px; // Extra large screen / wide desktop (this is used for wmcads-container size)
+
+
+// Sizing (used for margin, padding, line heights etc.)
+// [DON'T TOUCH EXISTING, ONLY ADD NEW ONES]
+$size-xs: 0.25rem; // 4px
+$size-xsm: 0.5rem; // 8px
+$size-sm: 0.75rem; // 12px
+$size-md: 1rem; // 16px
+$size-lg: 2rem; // 32px
+$size-xl: 3rem; // 48px

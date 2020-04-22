@@ -1,0 +1,13 @@
+.wmnds-container-alerts-sign-up{
+
+    .wmnds-content-tile{
+      border-bottom: none;
+    }
+
+    .wmnds-btn{
+      @media screen and(max-width: $breakpoint-sm) {
+        margin: $size-sm 0;
+      }
+    }
+
+}
