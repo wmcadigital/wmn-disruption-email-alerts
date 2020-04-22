@@ -14,6 +14,10 @@ const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify-es').default;
+const replace = require('gulp-replace');
+const fs = require('fs');
+
+const json = JSON.parse(fs.readFileSync('./package.json'));
 
 sass.compiler = require('node-sass');
 
@@ -44,6 +48,24 @@ const path = {
     other: 'app/static/*'
   }
 };
+
+let build = 'local';
+// Function that is ran when buildAll is called to determine buildEnv
+// This matches the buildDirs in package.json
+switch (process.env.npm_config_build) {
+  case 'staging':
+    build = 'staging';
+    break;
+  case 'live':
+    build = 'live';
+    break;
+  case 'githubpages':
+    build = 'githubpages';
+    break;
+  default:
+    build = 'local';
+    break;
+}
 
 const sassOptions = {
   outputStyle: 'expanded'
@@ -88,6 +110,7 @@ function nunjucksTask() {
     .pipe(nunjucksRender({
       path: ['app/templates']
     }))
+    .pipe(replace('$*cdn', json.buildDirs[build].cdn))
     .pipe(dest(path.output))
     .pipe(browserSync.stream());
 }
@@ -136,6 +159,16 @@ function browserSyncTask() {
   });
 }
 
+// Used to build everything out for use on staging/live
+const buildAll = series(
+  nunjucksTask,
+  sassTask,
+  copyStaticTask,
+  copyCssTask,
+  scriptTask,
+  imagesMinTask
+);
+
 exports.clean = cleanTask;
 exports.sass = sassTask;
 exports.sassdoc = sassDocTask;
@@ -146,3 +179,4 @@ exports.copystatic = series(copyStaticTask, copyCssTask);
 exports.build = series(nunjucksTask, sassTask, copyStaticTask, copyCssTask, scriptTask, imagesMinTask);
 exports.default = series(cleanTask, nunjucksTask, sassTask, sassDocTask, copyStaticTask, copyCssTask, scriptTask, imagesMinTask);
 exports.serve = parallel(browserSyncTask, watchTask);
+exports.buildAll = buildAll;

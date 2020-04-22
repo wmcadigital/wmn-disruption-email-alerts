@@ -23,6 +23,7 @@
     "gulp-imagemin": "^6.1.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
@@ -36,11 +37,33 @@
     "prettier": "^1.19.1",
     "testcafe": "^1.6.0"
   },
+  "buildDirs": {
+    "live": {
+      "baseUrl": "//beta.wmnetwork.co.uk/",
+      "cdn": "https://cloudcdn.wmca.org.uk/wmnetwork"
+    },
+    "staging": {
+      "baseUrl": "//beta.wmnetwork.co.uk/",
+      "cdn": "https://cloudcdn.wmca.org.uk/staging/wmnetwork"
+    },
+    "githubpages": {
+      "baseUrl": "https://wmcadigital.github.io/wmn-disruption-email-alerts/",
+      "cdn": "https://wmcadigital.github.io/wmn-disruption-email-alerts"
+    },
+    "local": {
+      "baseUrl": "/",
+      "cdn": ""
+    }
+  },
   "scripts": {
     "build": "gulp",
     "prestart": "gulp build",
     "start": "gulp serve",
-    "test": "testcafe chrome,firefox tests/ --app \"http-server ./docs -s\""
+    "build:all": "gulp buildAll",
+    "test": "testcafe chrome,firefox tests/ --app \"http-server ./docs -s\"",
+    "build:staging": "npm run build:all --build=staging",
+    "build:live": "npm run build:all --build=live",
+    "build:github": "npm run build:all --build=githubpages"
   },
   "repository": {
     "type": "git",
