@@ -4,28 +4,4 @@
     margin-top: 0px;
   }
 
-  .wmnds-content-tile {
-    margin-bottom: 30px;
-    &__list {
-      &--li {
-        display: flex;
-      }
-
-      .wmnds-disruption-indicator-large__text {
-        width: auto;
-      }
-
-      .wmnds-btn--destructive {
-        float: right;
-      }
-    }
-
-    .wmnds-btn--destructive {
-      margin-top: 10px;
-    }
-
-    .wmnds-content-tile__list-content {
-      display: flex;
-    }
-  }
 }

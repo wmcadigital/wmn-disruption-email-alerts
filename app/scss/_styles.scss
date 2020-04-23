@@ -1,7 +1,24 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+.wmnds-content-tile {
+  margin-bottom: 30px;
+  &__list {
+    &--li {
+      display: flex;
+    }
 
-.m-text {
-  border: solid 2px blue;
+    .wmnds-disruption-indicator-large__text {
+      width: auto;
+    }
+
+    .wmnds-btn--destructive {
+      float: right;
+    }
+  }
+
+  .wmnds-btn--destructive {
+    margin-top: 10px;
+  }
+
+  .wmnds-content-tile__list-content {
+    display: flex;
+  }
 }
