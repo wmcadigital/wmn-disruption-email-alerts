@@ -2,6 +2,9 @@
 
     .wmnds-content-tile{
       border-bottom: none;
+      ul#wmnds-autocomplete-suggestions {
+        padding: 0;
+      }
     }
 
     .wmnds-btn{

@@ -8,7 +8,7 @@
     <title>
       Disruption Alerts
     </title>
-    <meta name="description" content="A Nunjucks and Gulp static site boilerplate.">
+    <meta name="description" content="Sign up to email alerts about disruptions">
 
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -29,8 +29,6 @@
 
     <!-- CSS for WMN Design System -->
     <link href="//wmnetwork.netlify.com/css/wmnds-components.min.css" rel="stylesheet" type="text/css">
-    <link href="//wmnetwork.netlify.com/css/wmnds-website.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@7.2.0/dist/css/autoComplete.min.css">
 
   </head>
 
@@ -44,7 +42,7 @@
   <div class="wmnds-container wmnds-grid wmnds-grid--align-center wmnds-grid--justify-between">
     <div class="wmnds-header__vertical-align wmnds-col-auto">
       <!-- Logo -->
-      <a class="wmnds-header__logo-link" href="/" title="West Midlands Network Design System">
+      <a class="wmnds-header__logo-link" href="https://wmcadigital.github.io/wmn-disruption-email-alerts" title="West Midlands Network Design System">
         <img class="wmnds-header__logo" alt="West Midlands Network logo" src="https://wmnetwork.netlify.com/img/logo.svg" />
       </a>
       <!-- Phase indicator -->
@@ -130,28 +128,29 @@
     <div class="wmnds-content-tile">
     <h2>Add a bus route</h2>
     <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
-    <div
-        class="wmnds-autocomplete wmnds-grid">
+      <div class="wmnds-autocomplete wmnds-grid">
         <!-- Search icon -->
         <svg class="wmnds-autocomplete__icon">
-            <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
+          <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
         </svg>
         <!-- normal sized loader -->
         <div class="wmnds-loader" role="alert" aria-live="assertive">
-            <p class="wmnds-loader__content">Content is loading...</p>
+          <p class="wmnds-loader__content">Content is loading...</p>
         </div>
         <!-- Autocomplete input box -->
-        <input class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Tap to search" id="serviceSearch" name="serviceSearch" aria-label="Tap to search" type="text"></div>
-        <div class="wmnds-website-mar"></div>
+        <input id="autoComplete" class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus service" name="searchExample" aria-label="Search for a bus service"  type="text" >
+      </div>
+
+      <!-- Autocomplete suggestions -->
+      <div id="autolist"></div>
         <a class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/index.html">
             Cancel
         </a>
         <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/alerts/summary.html">
             Continue
         </a>
-  <div class="wmnds-website-mar"></div>
-  </div>
-  </div>
+      </div>
+    </div>
   </div>
 </div>
 

@@ -110,6 +110,7 @@ function nunjucksTask() {
     .pipe(nunjucksRender({
       path: ['app/templates']
     }))
+    .pipe(replace('$*baseUrl', json.buildDirs[build].baseUrl))
     .pipe(replace('$*cdn', json.buildDirs[build].cdn))
     .pipe(dest(path.output))
     .pipe(browserSync.stream());
