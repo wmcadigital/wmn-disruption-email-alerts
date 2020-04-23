@@ -4,4 +4,10 @@
     margin-top: 0px;
   }
 
+  .wmnds-btn--destructive{
+    @media screen and(max-width: $breakpoint-sm) {
+      margin-top: 10px;
+    }
+  }
+
 }
