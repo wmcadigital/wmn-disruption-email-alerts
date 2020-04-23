@@ -37,18 +37,21 @@
     <div class="wmnds-content-tile">
     <h2>Add a bus route</h2>
     <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
-    <div
-        class="wmnds-autocomplete wmnds-grid">
+      <div class="wmnds-autocomplete wmnds-grid">
         <!-- Search icon -->
         <svg class="wmnds-autocomplete__icon">
-            <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
+          <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
         </svg>
         <!-- normal sized loader -->
         <div class="wmnds-loader" role="alert" aria-live="assertive">
-            <p class="wmnds-loader__content">Content is loading...</p>
+          <p class="wmnds-loader__content">Content is loading...</p>
         </div>
         <!-- Autocomplete input box -->
-        <input class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Tap to search" id="serviceSearch" name="serviceSearch" aria-label="Tap to search" type="text"></div>
+        <input id="autoComplete" class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus service" name="searchExample" aria-label="Search for a bus service"  type="text" >
+      </div>
+
+      <!-- Autocomplete suggestions -->
+      <div id="autolist"></div>
         <div class="wmnds-website-mar"></div>
         <a class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/index.html">
             Cancel
@@ -56,9 +59,9 @@
         <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/alerts/summary.html">
             Continue
         </a>
-  <div class="wmnds-website-mar"></div>
-  </div>
-  </div>
+        <div class="wmnds-website-mar"></div>
+      </div>
+    </div>
   </div>
 </div>
 
