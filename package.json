@@ -47,7 +47,7 @@
       "cdn": "https://cloudcdn.wmca.org.uk/staging/wmnetwork"
     },
     "githubpages": {
-      "baseUrl": "https://wmcadigital.github.io/wmn-disruption-email-alerts/",
+      "baseUrl": "https://wmcadigital.github.io/wmn-disruption-email-alerts",
       "cdn": "https://wmcadigital.github.io/wmn-disruption-email-alerts"
     },
     "local": {
