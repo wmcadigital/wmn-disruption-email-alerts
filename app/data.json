@@ -2,5 +2,19 @@
   "site": {
     "title": "Disruption email alerts",
     "description": "Sign up to email alerts about disruptions"
+  },
+  "pages": {
+    "home": {
+        "title": "Sign up and manage alerts about disruptions",
+        "description": "This is the home page"
+    },
+    "portal": {
+        "title": "Manage alerts about disruptions",
+        "description": "Manage alerts about disruptions"
+    },
+    "signup": {
+      "title": "Sign up to email alerts about disruption",
+      "description": "Sign up to email alerts about disruption"
+  }
   }
 }

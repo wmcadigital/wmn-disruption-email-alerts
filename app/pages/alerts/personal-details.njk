@@ -1,54 +1,39 @@
+{% set pageName = 'signup' %}
 {% extends "layout.njk" %}
 
 {% block title -%}
-  Disruption Alerts
+  Disruption Alerts - Your details
 {%- endblock %}
+
 {% block content %}
 <div class="wmnds-container-alerts-sign-up">
     <h1>Sign up to email alerts about disruptions</h1>
+    <a href="$*cdn/alerts/sign-up.html" title="Back to sign up page" target="_self" class="wmnds-link">< Back</a>
     <div class="wmnds-grid">
-    <div class="wmnds-col-1 wmnds-col-sm-3-4">
-    <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--current">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Personal details</span>
+        <div class="wmnds-col-1 wmnds-col-sm-3-4">
+            <div class="wmnds-content-tile">
+                <p>Section 1 of 2</p>
+                <h3 class="wmnds-fe-question">
+                  About you
+                </h3>
+                <form>
+                  <fieldset>
+                    <legend class="wmnds-fe-fieldset__legend"><h2>Contact details</H2></legend>
+                <div class="wmnds-fe-group">
+                    <label class="wmnds-fe-label" for="name">Full Name</label>
+                    <input class="wmnds-fe-input" id="name" name="name" type="text"/>
+                </div>
+                <div class="wmnds-fe-group">
+                    <label class="wmnds-fe-label" for="email">Email Address</label>
+                    <input class="wmnds-fe-input" id="email" name="email" type="email"/>
+                </div>
+                <a class="wmnds-btn wmnds-col-1 wmnds-m-t-md" href="$*cdn/alerts/services.html">
+                    Continue
+                </a>
+                 </fieldset>
+</form>
             </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Services</span>
-            </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="$*cdn/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Summary</span>
-            </div>
-        </li>
-    </ul>
-    <div class="wmnds-content-tile">
-    <div class="wmnds-fe-group">
-        <label class="wmnds-fe-label" for="name">Full Name</label>
-        <input class="wmnds-fe-input" id="name" name="name" type="text"/>
-    </div>
-    <div class="wmnds-fe-group">
-        <label class="wmnds-fe-label" for="email">Email Address</label>
-        <input class="wmnds-fe-input" id="email" name="email" type="email"/>
-    </div>
-    <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/alerts/services.html">
-        Continue
-    </a>
-    </div>
-    </div>
+        </div>
     </div>
 </div>
-
 {% endblock %}
