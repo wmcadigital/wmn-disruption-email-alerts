@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-      Disruption Alerts
+      Disruption Alerts - Add services
     </title>
-    <meta name="description" content="Sign up to email alerts about disruptions">
+    <meta name="description" content="Sign up to email alerts about disruption">
 
     
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -55,19 +55,7 @@
 <nav class="wmnds-header__vertical-align wmnds-col-auto">
   <ul class="wmnds-header__links wmnds-header__main-links">
     <li class="wmnds-header__link">
-      <a href="#" title="Plan a journey" target="_self" class="wmnds-link" >
-        Plan a journey
-      </a>
-    </li>
-    <li class="wmnds-header__link">
-      <a href="#" title="Tickets Search" target="_self" class="wmnds-link" >
-        Tickets
-      </a>
-    </li>
-    <li class="wmnds-header__link">
-      <a href="#" title="Contact Us" target="_self" class="wmnds-link" >
-        Help
-      </a>
+        <h1>Sign up to email alerts about disruption</h1>
     </li>
   </ul>
 </nav>
@@ -97,63 +85,43 @@
       
 <div class="wmnds-container-alerts-sign-up">
     <h1>Sign up to email alerts about disruptions</h1>
+    <a href="https://wmcadigital.github.io/wmn-disruption-email-alerts/alerts/personal-details.html" title="Back to personal details" target="_self" class="wmnds-link">< Back</a>
     <div class="wmnds-grid">
-    <div class="wmnds-col-1 wmnds-col-sm-3-4">
-    <ul class="wmnds-progress-indicator wmnds-grid wmnds-grid--justify-between">
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--success">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-success" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Personal details</span>
+        <div class="wmnds-col-1 wmnds-col-sm-3-4">
+            <div class="wmnds-content-tile">
+                <p>Section 2 of 2</p>
+                <h3 class="wmnds-fe-question">
+                  Services
+                </h3>
+                <form>
+                  <fieldset>
+                <legend class="wmnds-fe-fieldset__legend"><h2>Add a bus route</h2></legend>
+                <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
+                <div
+                    class="wmnds-autocomplete wmnds-grid">
+                    <!-- Search icon -->
+                    <svg class="wmnds-autocomplete__icon">
+                        <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
+                    </svg>
+                    <!-- normal sized loader -->
+                    <div class="wmnds-loader" role="alert" aria-live="assertive">
+                        <p class="wmnds-loader__content">Content is loading...</p>
+                    </div>
+                    <!-- Autocomplete input box -->
+                    <input id="autoComplete" class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus service" name="searchExample" aria-label="Search for a bus service" type="text"></div>
+
+                    <!-- Autocomplete suggestions -->
+                    <div id="autolist"></div>
+
+                      </fieldset>
+                    </form>
+                    <a class="wmnds-btn wmnds-col-1 wmnds-m-t-md" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/alerts/summary.html">
+                        Continue
+                    </a>
+                </div>
             </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item wmnds-progress-indicator__item--current">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-success" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-success"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Services</span>
-            </div>
-        </li>
-        <li class="wmnds-col-1 wmnds-col-md-1-5">
-            <div class="wmnds-progress-indicator__item">
-                <svg class="wmnds-progress-indicator__icon">
-                    <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-circle-hollow"></use>
-                </svg>
-                <span class="wmnds-progress-indicator__title">Summary</span>
-            </div>
-        </li>
-    </ul>
-    <div class="wmnds-content-tile">
-    <h2>Add a bus route</h2>
-    <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
-      <div class="wmnds-autocomplete wmnds-grid">
-        <!-- Search icon -->
-        <svg class="wmnds-autocomplete__icon">
-          <use xlink:href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/img/wmnds-sprite.min.svg#wmnds-general-search"></use>
-        </svg>
-        <!-- normal sized loader -->
-        <div class="wmnds-loader" role="alert" aria-live="assertive">
-          <p class="wmnds-loader__content">Content is loading...</p>
         </div>
-        <!-- Autocomplete input box -->
-        <input id="autoComplete" class="wmnds-fe-input wmnds-autocomplete__input wmnds-col-1" value="" placeholder="Search for a bus service" name="searchExample" aria-label="Search for a bus service"  type="text" >
-      </div>
-
-      <!-- Autocomplete suggestions -->
-      <div id="autolist"></div>
-        <a class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/index.html">
-            Cancel
-        </a>
-        <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="https://wmcadigital.github.io/wmn-disruption-email-alerts/alerts/summary.html">
-            Continue
-        </a>
-      </div>
     </div>
-  </div>
-</div>
-
 
 
     </main>
