@@ -8,10 +8,17 @@
 {% block content %}
 <div class="wmnds-container-alerts-sign-up">
     <h1>Sign up to email alerts about disruptions</h1>
+    <a href="$*cdn/alerts/personal-details.html" title="Back to personal details" target="_self" class="wmnds-link">< Back</a>
     <div class="wmnds-grid">
         <div class="wmnds-col-1 wmnds-col-sm-3-4">
             <div class="wmnds-content-tile">
-                <h2>Add a bus route</h2>
+                <p>Section 2 of 2</p>
+                <h3 class="wmnds-fe-question">
+                  Services
+                </h3>
+                <form>
+                  <fieldset>
+                <legend class="wmnds-fe-fieldset__legend"><h2>Add a bus route</h2></legend>
                 <label class="wmnds-fe-label" for="serviceSearch">Service Search</label>
                 <div
                     class="wmnds-autocomplete wmnds-grid">
@@ -28,9 +35,9 @@
 
                     <!-- Autocomplete suggestions -->
                     <div id="autolist"></div>
-                    <a class="wmnds-btn wmnds-btn--destructive wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/index.html">
-                        Cancel
-                    </a>
+
+                      </fieldset>
+</form>
                     <a class="wmnds-btn wmnds-btn--cta wmnds-col-1 wmnds-col-sm-auto" href="$*cdn/alerts/summary.html">
                         Continue
                     </a>
